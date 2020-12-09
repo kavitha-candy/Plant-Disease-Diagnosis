@@ -1,0 +1,27 @@
+{% extends "import.html" %}
+{% block content %}
+
+<center>
+<br><h2>Plant Disease Diagnosis</h2><br>
+    <div class="image-section" style="display:none;">
+         <img id="imagePreview"  class="img-responsive" src="#" style="width:300px;height:300px;"/><br><br>
+    </div>
+
+            <h2 class="article-title">Disease Name: {{name}}</h2></center><br>
+    <div style="margin-left:200; margin-right:300">
+            <h3 class="article-title" >Reason:</h3>
+        <div class="media content-section">
+            <p class="article-content">{{reason}}</p><br>
+        </div>
+
+            <h3 class="article-title">Treatment:</h3><br>
+        <div class="media content-section">
+            <p class="article-content"> {{treat}}</p>
+        </div>
+        <div style="text-align:right;">
+            <a href="{{url_for('index')}}"><button type="button" class="btn btn-info btn-lg ">Back to Home</button></a>
+        </div>
+    </div>
+
+<br><br>
+{% endblock %}
